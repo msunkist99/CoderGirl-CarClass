@@ -6,7 +6,20 @@ namespace CarClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car car = new Car();
+
+            Console.WriteLine($"Current fuel level is {car.fuelLevel} gallons");
+
+            Console.ReadLine();
+
+            Console.WriteLine("Add some gas to the car");
+            float additionalFuel = float.Parse( Console.ReadLine());
+
+            Console.WriteLine($"You added gas to the car ---- {car.AddFuel(additionalFuel)}");
+
+            Console.WriteLine($"We added {car.FullFuel()} to fill the gas tank");
+
+            Console.ReadLine();
         }
     }
 }

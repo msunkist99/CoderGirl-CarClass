@@ -17,6 +17,8 @@ namespace CarClass
 
             Console.WriteLine($"You added gas to the car ---- {car.AddFuel(additionalFuel)}");
 
+            Console.WriteLine($"You have {car.fuelLevel} gallons of gas");
+
             Console.WriteLine($"We added {car.FullFuel()} to fill the gas tank");
 
             Console.ReadLine();

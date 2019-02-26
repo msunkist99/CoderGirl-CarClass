@@ -11,9 +11,11 @@ namespace CarClass
 
         public Car()
         {
-            Random random = new Random();
+            //Random random = new Random();
 
-            fuelLevel = random.Next(1, 14);
+            fuelLevel = new Random().Next(1, 14);
+
+            //fuelLevel = random.Next(1, 14);
         }
 
         public bool AddFuel(float additionalFuel)
